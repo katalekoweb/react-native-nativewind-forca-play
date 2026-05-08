@@ -1,0 +1,53 @@
+import { useFonts } from "expo-font";
+import { Slot, Stack, Tabs } from "expo-router";
+import React, { useEffect } from "react";
+import { Text, View } from "react-native";
+import * as SplashScreen from "expo-splash-screen";
+import "../global.css"
+import { theme } from "@/shared/themes/theme";
+
+SplashScreen.preventAutoHideAsync();
+
+const RootLayout = () => {
+  const [loaded, error] = useFonts({
+    PoppinsRegular: require("./../../assets/fonts/Poppins/Poppins-Regular.ttf"),
+    PoppinsBold: require("./../../assets/fonts/Poppins/Poppins-Bold.ttf"),
+  });
+
+  useEffect(() => {
+    if (loaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded]);
+
+  if (!loaded) return null;
+
+  // navigation pode ser Slot, Stack ou Tabs
+
+  return (
+    <Stack screenOptions={{
+        contentStyle: {
+            backgroundColor: theme.colors.background
+        },
+        headerStyle: {
+            backgroundColor: theme.colors.paper
+        },
+        headerTitleStyle: {
+            color: theme.colors.text,
+            fontFamily: theme.fonts.family.bold
+        }
+    }}>
+        <Stack.Screen 
+            name="(tabs)"
+            options={{headerShown: false}}
+            />
+
+        <Stack.Screen 
+            name="matches/MathDetails"
+            options={{title: 'Detalhes'}}
+            />
+    </Stack>
+  );
+};
+
+export default RootLayout;
