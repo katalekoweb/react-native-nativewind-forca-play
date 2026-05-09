@@ -31,6 +31,7 @@ const Layout = () => {
             gap: 16,
             paddingHorizontal: 16,
             borderRadius: theme.corner.large,
+            marginBottom: 24
           }}
         >
           <TabTrigger className="p-2 px-8" name="home" href={"/"} asChild>

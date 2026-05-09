@@ -1,10 +1,21 @@
+import Section from '@/shared/components/Section'
 import React from 'react'
 import { Text, View } from 'react-native'
 
 const Home = () => {
   return (
-      <View className='flex-1 justify-center items-center'>
-        <Text className='font-regular text-text'>About!</Text>
+      <View className='gap-8 px-4'>
+        <Section title='Sobre o FrocaPlay'>
+        <Text className='font-regular text-text text-md'>
+          Este aplicativo exibe a versão offline do jogo ForcaPlay. O clássico jogo da forca
+        </Text>
+      </Section>
+
+      <Section title='Formas de Contacto'>
+        <Text className='font-regular text-text text-md'>
+          Este aplicativo exibe a versão offline do jogo ForcaPlay. O clássico jogo da forca
+        </Text>
+      </Section>
       </View>
   )
 }

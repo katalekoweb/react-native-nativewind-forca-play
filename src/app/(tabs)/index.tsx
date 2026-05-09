@@ -10,7 +10,7 @@ const Home = () => {
   const router = useRouter()
 
   return (
-       <View className='flex-1 mt-6'>
+       <View className='flex-1'>
           <View className=' items-center flex flex-row gap-4 justify-center'>
             <Contained color='error' text='Nova partida' />
             <Outlined color='error' text='Voltar' />
