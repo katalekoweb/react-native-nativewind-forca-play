@@ -5,7 +5,6 @@ import { Pressable, Text, View } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { theme } from "@/shared/themes/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { event } from "react-native/types_generated/Libraries/Animated/AnimatedExports";
 
 SplashScreen.preventAutoHideAsync();
 

@@ -5,6 +5,7 @@ import { Text, View } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import "../global.css"
 import { theme } from "@/shared/themes/theme";
+import CustomHeader from "@/shared/components/CustomHeader";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -26,6 +27,7 @@ const RootLayout = () => {
 
   return (
     <Stack screenOptions={{
+      header: CustomHeader,
         contentStyle: {
             backgroundColor: theme.colors.background
         },
@@ -43,7 +45,7 @@ const RootLayout = () => {
             />
 
         <Stack.Screen 
-            name="matches/MathDetails"
+            name="matches/MatchDetails"
             options={{title: 'Detalhes'}}
             />
     </Stack>
