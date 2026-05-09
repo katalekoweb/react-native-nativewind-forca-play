@@ -13,7 +13,7 @@ export default {
         background: theme.colors.background,
         paper: theme.colors.paper,
         text: theme.colors.text,
-        primay: theme.colors.primary,
+        primary: theme.colors.primary,
         alert: theme.colors.alert,
         primaryText: theme.colors.primaryText,
         correct: theme.colors.correct,
