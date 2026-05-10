@@ -7,9 +7,9 @@ type TSectionProps = {
 }
 const Section = ({title, children} : TSectionProps) => {
   return (
-    <View className='gap-3'>
-        <Text className='text-text text-xl font-regular'>{ title }</Text>
-        <View>
+    <View className='gap-2'>
+        <Text className='text-text text-lg font-regular'>{ title }</Text>
+        <View className='gap-4'>
             { children }
         </View>
     </View>
