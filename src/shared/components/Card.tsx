@@ -2,11 +2,12 @@ import React from 'react'
 import { View } from 'react-native'
 
 interface ICard {
+    className?: string
     children: React.ReactNode
 }
-const Card = ({children} : ICard) => {
+const Card = ({className, children} : ICard) => {
   return (
-    <View className='bg-paper p-4 rounded-lg gap-1'>
+    <View className={`bg-paper p-4 rounded-lg gap-1 ${className}`}>
         {children}
     </View>
   )
