@@ -20,7 +20,7 @@ const Home = () => {
 
           <Section title='Partidas em andamento'>
             <Card>
-              <MatchListItem onPress={() => Alert.alert("Clicado")}
+              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
                 mode='classic' 
                 numberOfRounds={5} 
                 status='ongoing'
@@ -30,28 +30,28 @@ const Home = () => {
 
           <Section title='Histórico de partidas'>
             <Card>
-              <MatchListItem onPress={() => Alert.alert("Clicado")}
+              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
                 mode='classic' 
                 numberOfRounds={3} 
                 status='ongoing'
                 currentRound={1} />
             </Card>
             <Card>
-              <MatchListItem onPress={() => Alert.alert("Clicado")}
+              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
                 mode='classic' 
                 numberOfRounds={3} 
                 status='lose'
                 currentRound={1} />
             </Card>
             <Card>
-              <MatchListItem 
+              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
                 mode='classic' 
                 numberOfRounds={3} 
                 status='win'
                 currentRound={1} />
             </Card>
             <Card>
-              <MatchListItem 
+              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
                 mode='classic' 
                 numberOfRounds={3} 
                 status='ongoing'

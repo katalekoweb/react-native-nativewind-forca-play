@@ -13,6 +13,7 @@ const RootLayout = () => {
   const [loaded, error] = useFonts({
     PoppinsRegular: require("./../../assets/fonts/Poppins/Poppins-Regular.ttf"),
     PoppinsBold: require("./../../assets/fonts/Poppins/Poppins-Bold.ttf"),
+    PoppinsItalic: require("./../../assets/fonts/Poppins/Poppins-Italic.ttf"),
   });
 
   useEffect(() => {

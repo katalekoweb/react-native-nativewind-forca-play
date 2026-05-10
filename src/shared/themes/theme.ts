@@ -24,6 +24,7 @@ export const theme = {
     family: {
       regular: "PoppinsRegular",
       bold: "PoppinsBold",
+      italic: "PoppinsItalic"
     },
   },
 };
