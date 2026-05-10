@@ -15,12 +15,12 @@ const Home = () => {
   return (
        <View className='flex-1 px-4 gap-6'>
           <View className=' items-center flex flex-row gap-4 justify-center'>
-            <Contained color='error' text='Nova partida' />
+            <Contained onPress={() => router.push('/matches/NewMatch')} color='error' text='Nova partida' />
           </View>
 
           <Section title='Partidas em andamento'>
             <Card>
-              <MatchListItem onPress={() => router.push('/matches/MatchDetails')}
+              <MatchListItem onPress={() => router.push('/matches/MatchOnGoing')}
                 mode='classic' 
                 numberOfRounds={5} 
                 status='ongoing'
