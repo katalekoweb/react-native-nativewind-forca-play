@@ -20,7 +20,7 @@ const Home = () => {
 
           <Section title='Partidas em andamento'>
             <Card>
-              <MatchListItem onPress={() => router.push('/matches/MatchOnGoing')}
+              <MatchListItem onPress={() => router.push('/matches/NewRound')}
                 mode='classic' 
                 numberOfRounds={5} 
                 status='ongoing'

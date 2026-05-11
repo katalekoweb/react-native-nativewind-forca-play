@@ -1,6 +1,7 @@
 import { ForcaImages } from "@/shared/assets";
 import Outlined from "@/shared/components/Buttons/Outlined";
 import Card from "@/shared/components/Card";
+import Keyboard from "@/shared/components/match-ongoing/Keyboard";
 import RoundListItem from "@/shared/components/RoundListItem";
 import Section from "@/shared/components/Section";
 import React from "react";
@@ -18,7 +19,7 @@ const MatchOnGoing = () => {
           {tip}
         </Text>
 
-        <Image source={ForcaImages[1]} className="w-20 h-20" />
+        <Image source={ForcaImages[1]} style={{width: 250, height: 250}} />
 
         <View className="flex-row flex-wrap gap-2 items-center justify-center">
           {maskedWord.map(letter => (
@@ -29,6 +30,12 @@ const MatchOnGoing = () => {
           </View>
           ))}
         </View>
+
+        <Keyboard
+          onSelect={(letter) => console.log(letter)}
+          wrongWords={["e", 'i']}
+          correctWorkds={["j", "o"]}
+          />
 
         <Outlined color="error" text="Desistir da partida" />
       </View>
