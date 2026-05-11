@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import SelectDropdown from "react-native-select-dropdown";
 import { theme } from "@/shared/themes/theme";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 interface ISelect {
     data: any[]
@@ -16,6 +17,7 @@ interface ISelect {
 const Select = ({data, label, value, onSelect, onGetSelected, onGetItemLabel} : ISelect) => {
   const [select, setSelect] = useState(2);
 
+  const insets = useSafeAreaInsets()
 
   return (
     <View className="gap-1">
@@ -60,7 +62,7 @@ const Select = ({data, label, value, onSelect, onGetSelected, onGetItemLabel} : 
           padding: 8,
           borderRadius: theme.corner.normal,
           backgroundColor: theme.colors.paper,
-          marginTop: -16,
+          marginTop: -insets.bottom,
         }}
         showsVerticalScrollIndicator={false}
       />

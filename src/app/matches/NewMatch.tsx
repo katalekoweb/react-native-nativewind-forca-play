@@ -1,3 +1,5 @@
+import Contained from "@/shared/components/Buttons/Contained";
+import Outlined from "@/shared/components/Buttons/Outlined";
 import Card from "@/shared/components/Card";
 import Select from "@/shared/components/new-match/Select";
 import RoundListItem from "@/shared/components/RoundListItem";
@@ -6,26 +8,67 @@ import React, { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
 
 const NewMatch = () => {
-
-  const [selected, setSelected] = useState('')
+  const [dificulty, setDificulty] = useState("medium");
+  const [timeForRound, setTimeForRound] = useState(5);
+  const [numberOfRounds, setNumberOfRounds] = useState(3);
 
   return (
     <ScrollView className="flex-1 p-2 gap-4">
-      <View>
-        <Text>Novo Jogo </Text>
+      <View className="gap-6 pt-6">
+        <Text className="text-text text-center text-base font-regular">
+          Modo de Jogo Offline
+        </Text>
 
-        <Select 
-        value={selected}
-        label="Dificuldade"
-        onGetItemLabel={(item) => item?.name ?? 'selecione'}
-        onGetSelected={(selectedValue, item) => item.id === selectedValue}
-        onSelect={(selectedItem) => setSelected(selectedItem.id)}
-        data={[
-          {id: '1', name: 'Um'},
-          {id: '2', name: 'Dois'},
-          {id: '3', name: 'Tres'},
-          {id: '4', name: 'Quatro'}
-        ]} />
+        <View className="gap-6">
+          <Select
+            value={dificulty}
+            label="Dificuldade"
+            onGetItemLabel={(item) => item?.name ?? "selecione"}
+            onGetSelected={(selectedValue, item) => item.id === selectedValue}
+            onSelect={(selectedItem) => setDificulty(selectedItem.id)}
+            data={[
+              { id: "easy", name: "Fácil" },
+              { id: "medium", name: "Médio" },
+              { id: "hard", name: "Difícil" },
+            ]}
+          />
+
+          <Select
+            value={numberOfRounds}
+            label="Número de Rodadas"
+            onGetItemLabel={(item) => item?.name ?? "selecione"}
+            onGetSelected={(selectedValue, item) => item.id === selectedValue}
+            onSelect={(selectedItem) => setNumberOfRounds(selectedItem.id)}
+            data={[
+              { id: 1, name: "1 rodada" },
+              { id: 2, name: "2 rodadas" },
+              { id: 3, name: "3 rodadas" },
+              { id: 6, name: "6 rodadas" },
+              { id: 10, name: "10 rodadas" },
+              { id: 20, name: "20 rodadas" },
+            ]}
+          />
+
+          <Select
+            value={timeForRound}
+            label="Tempo por rodada"
+            onGetItemLabel={(item) => item?.name ?? "selecione"}
+            onGetSelected={(selectedValue, item) => item.id === selectedValue}
+            onSelect={(selectedItem) => setTimeForRound(selectedItem.id)}
+            data={[
+              { id: 3, name: "3 minutos" },
+              { id: 5, name: "5 minutos" },
+              { id: 15, name: "15 minutos" },
+              { id: 30, name: "30 minutos" },
+              { id: 60, name: "60 minutos" },
+            ]}
+          />
+        </View>
+
+        <View className="flex-row items-center justify-center gap-6">
+          <Outlined text="Voltar" />
+          <Contained text="Começar" />
+        </View>
       </View>
     </ScrollView>
   );
