@@ -1,8 +1,10 @@
+import { ForcaImages } from "@/shared/assets";
+import Outlined from "@/shared/components/Buttons/Outlined";
 import Card from "@/shared/components/Card";
 import RoundListItem from "@/shared/components/RoundListItem";
 import Section from "@/shared/components/Section";
 import React from "react";
-import { ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 
 const MatchOnGoing = () => {
 
@@ -16,6 +18,8 @@ const MatchOnGoing = () => {
           {tip}
         </Text>
 
+        <Image source={ForcaImages[1]} className="w-20 h-20" />
+
         <View className="flex-row flex-wrap gap-2 items-center justify-center">
           {maskedWord.map(letter => (
             <View className="border-b-4 h-9 w-9 border-text">
@@ -25,6 +29,8 @@ const MatchOnGoing = () => {
           </View>
           ))}
         </View>
+
+        <Outlined color="error" text="Desistir da partida" />
       </View>
     </ScrollView>
   );
