@@ -3,7 +3,7 @@ import { Slot, Stack, Tabs } from "expo-router";
 import React, { useEffect } from "react";
 import { Text, View } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
-import "../global.css"
+import "../global.css";
 import { theme } from "@/shared/themes/theme";
 import CustomHeader from "@/shared/components/CustomHeader";
 
@@ -27,48 +27,47 @@ const RootLayout = () => {
   // navigation pode ser Slot, Stack ou Tabs
 
   return (
-    <Stack screenOptions={{
-      header: CustomHeader,
+    <Stack
+      screenOptions={{
+        header: CustomHeader,
         contentStyle: {
-            backgroundColor: theme.colors.background
+          backgroundColor: theme.colors.background,
         },
         headerStyle: {
-            backgroundColor: theme.colors.paper
+          backgroundColor: theme.colors.paper,
         },
         headerTitleStyle: {
-            color: theme.colors.text,
-            fontFamily: theme.fonts.family.bold
-        }
-    }}>
-        <Stack.Screen 
-            name="(tabs)"
-            options={{headerShown: false}}
-            />
+          color: theme.colors.text,
+          fontFamily: theme.fonts.family.bold,
+        },
+      }}
+    >
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 
-        <Stack.Screen 
-            name="matches/MatchDetails"
-            options={{title: 'Detalhes'}}
-            />
+      <Stack.Screen
+        name="matches/[gameId]/MatchDetails"
+        options={{ title: "Detalhes" }}
+      />
 
-        <Stack.Screen 
-            name="matches/NewMatch"
-            options={{title: 'Nova Partida'}}
-            />
+      <Stack.Screen
+        name="matches/NewMatch"
+        options={{ title: "Nova Partida" }}
+      />
 
-        <Stack.Screen 
-            name="matches/MatchOnGoing"
-            options={{title: 'Partida em andamento'}}
-            />
+      <Stack.Screen
+        name="matches/[gameId]/MatchOnGoing"
+        options={{ title: "Partida em andamento" }}
+      />
 
-        <Stack.Screen 
-            name="matches/NewRound"
-            options={{title: 'Nova rodada'}}
-            />
+      <Stack.Screen
+        name="matches/[gameId]/NewRound"
+        options={{ title: "Nova rodada" }}
+      />
 
-        <Stack.Screen 
-            name="matches/MatchEnded"
-            options={{title: 'Partida Encerrada'}}
-            />
+      <Stack.Screen
+        name="matches/[gameId]/MatchEnded"
+        options={{ title: "Partida Encerrada" }}
+      />
     </Stack>
   );
 };

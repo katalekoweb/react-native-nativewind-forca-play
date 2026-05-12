@@ -25,7 +25,7 @@ const Home = () => {
         <Section title="Partidas em andamento">
           <Card>
             <MatchListItem
-              onPress={() => router.push("/matches/MatchEnded")}
+              onPress={() => router.push("/matches/1234/MatchOnGoing")}
               mode="classic"
               numberOfRounds={5}
               status="ongoing"
@@ -37,7 +37,7 @@ const Home = () => {
         <Section title="Histórico de partidas">
           <Card>
             <MatchListItem
-              onPress={() => router.push("/matches/MatchDetails")}
+              onPress={() => router.push("/matches/1234/MatchDetails")}
               mode="classic"
               numberOfRounds={3}
               status="ongoing"
@@ -46,7 +46,7 @@ const Home = () => {
           </Card>
           <Card>
             <MatchListItem
-              onPress={() => router.push("/matches/MatchDetails")}
+              onPress={() => router.push("/matches/1234/MatchDetails")}
               mode="classic"
               numberOfRounds={3}
               status="lose"
@@ -55,7 +55,7 @@ const Home = () => {
           </Card>
           <Card>
             <MatchListItem
-              onPress={() => router.push("/matches/MatchDetails")}
+              onPress={() => router.push("/matches/1234/MatchDetails")}
               mode="classic"
               numberOfRounds={3}
               status="win"
@@ -64,7 +64,7 @@ const Home = () => {
           </Card>
           <Card>
             <MatchListItem
-              onPress={() => router.push("/matches/MatchDetails")}
+              onPress={() => router.push("/matches/1234/MatchDetails")}
               mode="classic"
               numberOfRounds={3}
               status="ongoing"
