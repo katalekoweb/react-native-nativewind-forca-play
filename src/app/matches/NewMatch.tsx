@@ -4,13 +4,26 @@ import Card from "@/shared/components/Card";
 import Select from "@/shared/components/new-match/Select";
 import RoundListItem from "@/shared/components/RoundListItem";
 import Section from "@/shared/components/Section";
+import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
+import * as Crypto from 'expo-crypto';
 
 const NewMatch = () => {
+
+  const router = useRouter()
+
   const [dificulty, setDificulty] = useState("medium");
   const [timeForRound, setTimeForRound] = useState(5);
   const [numberOfRounds, setNumberOfRounds] = useState(3);
+
+  const handleCreateMatch = () => {
+    console.log(Crypto.randomUUID());    
+  }
+
+  const handleBack = () => {
+    router.dismissAll()
+  }
 
   return (
     <ScrollView className="flex-1 p-2 gap-4">
@@ -66,8 +79,8 @@ const NewMatch = () => {
         </View>
 
         <View className="flex-row items-center justify-center gap-6">
-          <Outlined text="Voltar" />
-          <Contained text="Começar" />
+          <Outlined text="Voltar" onPress={handleBack} />
+          <Contained text="Começar" onPress={handleCreateMatch} />
         </View>
       </View>
     </ScrollView>

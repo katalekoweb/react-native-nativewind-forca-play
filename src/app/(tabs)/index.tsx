@@ -17,7 +17,7 @@ const Home = () => {
         <View className=" items-center flex flex-row gap-4 justify-center">
           <Contained
             onPress={() => router.push("/matches/NewMatch")}
-            color="error"
+            color="primary"
             text="Nova partida"
           />
         </View>
