@@ -67,6 +67,33 @@ const Home = () => {
               onPress={() => router.push("/matches/1234/MatchDetails")}
               mode="classic"
               numberOfRounds={3}
+              status="win"
+              currentRound={1}
+            />
+          </Card>
+          <Card>
+            <MatchListItem
+              onPress={() => router.push("/matches/1234/MatchDetails")}
+              mode="classic"
+              numberOfRounds={3}
+              status="win"
+              currentRound={1}
+            />
+          </Card>
+          <Card>
+            <MatchListItem
+              onPress={() => router.push("/matches/1234/MatchDetails")}
+              mode="classic"
+              numberOfRounds={3}
+              status="win"
+              currentRound={1}
+            />
+          </Card>
+          <Card>
+            <MatchListItem
+              onPress={() => router.push("/matches/1234/MatchDetails")}
+              mode="classic"
+              numberOfRounds={3}
               status="ongoing"
               currentRound={1}
             />
