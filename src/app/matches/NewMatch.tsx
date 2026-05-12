@@ -8,6 +8,7 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
 import * as Crypto from 'expo-crypto';
+import { StorageMatchHistoryService } from "@/shared/services/StorageMatchHistoryService";
 
 const NewMatch = () => {
 
@@ -18,7 +19,7 @@ const NewMatch = () => {
   const [numberOfRounds, setNumberOfRounds] = useState(3);
 
   const handleCreateMatch = () => {
-    console.log(Crypto.randomUUID());    
+    // StorageMatchHistoryService.create()    
   }
 
   const handleBack = () => {
