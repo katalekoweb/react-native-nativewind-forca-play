@@ -1,6 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { GetNewWordToGuess } from "./GetNewWordToGuess";
 import { StorageGuessedWords } from "./StorageGuessedWords";
+import {addMinutes} from "date-fns"
 
 interface IRound {
   tip: string;
@@ -62,7 +63,7 @@ export const StorageMatchService = {
     }
 
     const startTime = Date.now()
-    const endTime = startTime // addMinutes(startTime, match.timeForEachRound).getTime()
+    const endTime = addMinutes(startTime, match.timeForEachRound).getTime()
 
     const newRound: IRound = {
       endTime,
