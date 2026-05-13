@@ -10,12 +10,12 @@ interface IWord {
 }
 
 export const GetNewWordToGuess = {
-  async getWord(difficulty: 'easy' | 'normal' | 'hard'): Promise<IWord | Error> {
+  async getWord(difficulty: 'easy' | 'medium' | 'hard'): Promise<IWord | Error> {
     const wordsGuessed = await StorageGuessedWords.getWords();
 
     const words = difficulty === 'easy'
       ? easyWords
-      : difficulty === 'normal'
+      : difficulty === 'medium'
         ? normalWords
         : difficulty === 'hard'
           ? hardWords

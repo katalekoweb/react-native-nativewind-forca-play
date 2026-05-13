@@ -9,12 +9,13 @@ interface ISelect {
     data: any[]
     label: string
     value: string | number | null
+    disabled?: boolean
     onGetItemLabel: (item: any) => string | undefined
     onSelect: (value: any | undefined) => void
     onGetSelected: (value: string | number | null, item: any) => any
 }
 
-const Select = ({data, label, value, onSelect, onGetSelected, onGetItemLabel} : ISelect) => {
+const Select = ({data, label, value, disabled, onSelect, onGetSelected, onGetItemLabel} : ISelect) => {
   const [select, setSelect] = useState(2);
 
   const insets = useSafeAreaInsets()
@@ -25,12 +26,15 @@ const Select = ({data, label, value, onSelect, onGetSelected, onGetItemLabel} : 
 
       <SelectDropdown
         data={data}
+        disabled={disabled}
         defaultValue={data.find(item => onGetSelected(value, item))}
         onSelect={(selectedItem, index) => {
           onSelect(selectedItem);
         }}
         renderButton={(selectedItem) => (
-          <View className="border-4 border-text rounded-md px-4 py-4 flex-row items-center justify-between">
+          <View 
+          style={{opacity: disabled ? 0.5 : undefined}}
+          className="border-4 border-text rounded-md px-4 py-4 flex-row items-center justify-between">
             <Text className=" text-text text-base font-regular">
               { onGetItemLabel(selectedItem) || "Selecioe"}
             </Text>

@@ -5,10 +5,11 @@ import { Pressable, Text } from 'react-native'
 type IOutlinedProps = {
     text: string
     color?: 'primary' | 'error'
+    disabled?: boolean
     onPress?: () => void
 }
 
-const Outlined = ({text, color, onPress} : IOutlinedProps) => {
+const Outlined = ({text, color, disabled, onPress} : IOutlinedProps) => {
 
     const [pressed, setPressed] = useState(false)
 
@@ -18,7 +19,7 @@ const Outlined = ({text, color, onPress} : IOutlinedProps) => {
         onPress={onPress}
         className='border-4 bg-paper px-4 py-2 rounded-sm'
         style={{ 
-          opacity: pressed ? 0.5 : 1,
+          opacity: (pressed || disabled) ? 0.5 : 1,
           borderColor: color === 'primary' ? theme.colors.primary :
             color === 'error' ? theme.colors.wrong : theme.colors.primary 
         }}
