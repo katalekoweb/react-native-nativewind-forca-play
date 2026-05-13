@@ -45,13 +45,13 @@ const RootLayout = () => {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 
       <Stack.Screen
-        name="matches/[gameId]/MatchDetails"
-        options={{ title: "Detalhes" }}
+        name="matches/NewMatch"
+        options={{ title: "Nova Partida" }}
       />
 
       <Stack.Screen
-        name="matches/NewMatch"
-        options={{ title: "Nova Partida" }}
+        name="matches/[gameId]/MatchDetails"
+        options={{ title: "Detalhes" }}
       />
 
       <Stack.Screen

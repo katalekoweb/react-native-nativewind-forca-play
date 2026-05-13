@@ -1,15 +1,64 @@
 import Outlined from "@/shared/components/Buttons/Outlined";
 import Contained from "@/shared/components/Buttons/Contained";
 import { theme } from "@/shared/themes/theme";
-import { useRouter } from "expo-router";
-import React from "react";
+import { useFocusEffect, useRouter } from "expo-router";
+import React, { useCallback, useEffect, useState } from "react";
 import { Alert, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import Section from "@/shared/components/Section";
 import Card from "@/shared/components/Card";
 import MatchListItem from "@/shared/components/home/MatchListItem";
+import {
+  IMatchHistory,
+  StorageMatchHistoryService,
+} from "@/shared/services/StorageMatchHistoryService";
+import {
+  IMatch,
+  StorageMatchService,
+} from "@/shared/services/StorageMatchService";
 
 const Home = () => {
   const router = useRouter();
+
+  const [matchesEndend, setMatchesEnded] = useState<IMatchHistory[]>([]);
+  const [matchesOnGoing, setMatchesOnGoing] = useState<
+    (IMatchHistory & IMatch)[]
+  >([]);
+
+  // useEffect(() => {
+
+  // }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+      StorageMatchHistoryService.getAll().then(async (matches) => {
+        const matchesEnded = matches?.filter(
+          (match) => match.status !== "ongoing",
+        );
+        setMatchesEnded(matchesEnded);
+
+        const matchesOnGoingList = matches?.filter(
+          (match) => match.status === "ongoing",
+        );
+
+        if (matchesOnGoingList) {
+          const fullMatchesOnGoing = await Promise.all(
+            matchesOnGoingList?.map(async (match) => {
+              const fullmatch = await StorageMatchService.getById(match.id);
+
+              if (!fullmatch) return;
+
+              return {
+                ...match,
+                ...fullmatch,
+              };
+            }),
+          ).then((matches) => matches.filter(Boolean));
+
+          setMatchesOnGoing(fullMatchesOnGoing as (IMatchHistory & IMatch)[]);
+        }
+      });
+    }, []),
+  );
 
   return (
     <ScrollView>
@@ -17,6 +66,7 @@ const Home = () => {
         <View className=" items-center flex flex-row gap-4 justify-center">
           <Contained
             onPress={() => router.push("/matches/NewMatch")}
+            disabled={matchesOnGoing.length > 0}
             color="primary"
             text="Nova partida"
           />
@@ -24,79 +74,45 @@ const Home = () => {
 
         <Section title="Partidas em andamento">
           <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchOnGoing")}
-              mode="classic"
-              numberOfRounds={5}
-              status="ongoing"
-              currentRound={1}
-            />
+            {matchesOnGoing.map((match) => (
+              <MatchListItem
+                onPress={() => router.push(`/matches/${match.id}/MatchOnGoing`)}
+                key={match.id}
+                mode={match.mode}
+                numberOfRounds={match.numberOfRounds}
+                status={match.status}
+                currentRound={match.currentRound}
+              />
+            ))}
+            {matchesOnGoing.length === 0 && (
+              <View className="p-2 gap-6">
+                <Text className="text-text font-bold text-lg text-center opacity-50">
+                  Nenhuma partida em andamento...
+                </Text>
+              </View>
+            )}
           </Card>
         </Section>
 
         <Section title="Histórico de partidas">
           <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="ongoing"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="lose"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="win"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="win"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="win"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="win"
-              currentRound={1}
-            />
-          </Card>
-          <Card>
-            <MatchListItem
-              onPress={() => router.push("/matches/1234/MatchDetails")}
-              mode="classic"
-              numberOfRounds={3}
-              status="ongoing"
-              currentRound={1}
-            />
+            {matchesEndend?.map((match) => (
+              <MatchListItem
+                onPress={() => router.push(`/matches/${match.id}/MatchDetails`)}
+                mode={match.mode}
+                key={match.id}
+                numberOfRounds={match.numberOfRounds}
+                status={match.status}
+                currentRound={match.numberOfRounds}
+              />
+            ))}
+            {matchesEndend?.length === 0 && (
+              <View className="p-2 gap-6">
+                <Text className="text-text font-bold text-lg text-center opacity-50">
+                  Nenhum histórico ainda...
+                </Text>
+              </View>
+            )}
           </Card>
         </Section>
       </View>

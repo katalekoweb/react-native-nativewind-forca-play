@@ -17,6 +17,7 @@ const Contained = ({text, color, disabled, onPress} : IContainedProps) => {
   return (
     <Pressable
         onPress={onPress}
+        disabled={disabled}
         className=' bg-primary px-4 py-3 rounded-sm'
         style={{ 
           opacity: (pressed || disabled) ? 0.5 : 1,

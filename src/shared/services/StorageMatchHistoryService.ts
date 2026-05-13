@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Crypto from "expo-crypto";
 
-interface IMatchHistory {
+export interface IMatchHistory {
   id: string;
   mode: "classic";
   status: "ongoing" | "lose" | "win" | "draw";
@@ -28,7 +28,12 @@ export const StorageMatchHistoryService = {
       id: Crypto.randomUUID(),
     };
 
-    const matches = await StorageMatchHistoryService.getAll();
+    const matches = await StorageMatchHistoryService.getAll() ?? [];
+
+    const matchesOnGoing = matches?.filter(match => match.status === 'ongoing') ?? []
+
+    if (matchesOnGoing.length > 0) throw new Error("Match ongoing limit archived")
+
     matches.unshift(matchToInsert);
 
     const matchesAsString = JSON.stringify(matches);

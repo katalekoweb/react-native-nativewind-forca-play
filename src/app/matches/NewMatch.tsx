@@ -45,7 +45,12 @@ const NewMatch = () => {
     await StorageMatchService.addRoundByMatchId(matchId)
 
     setIsLoading(false)
-    router.replace(`/matches/${matchId}/MatchOngoing`)
+
+    // console.log(matchId);
+    router.back()    
+
+    // router.replace(`/matches/${matchId}/MatchEnded`)
+    // router.replace(`/matches/${matchId}/MatchOngoing`)
   }
 
   const handleBack = () => {
