@@ -10,7 +10,7 @@
     numberOfRounds: 3,
 }
 
-// letters key
+// guessed words key
 "abacate,jogo,hopital"
 
 // Match:Id

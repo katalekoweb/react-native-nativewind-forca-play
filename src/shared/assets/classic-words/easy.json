@@ -1,0 +1,1026 @@
+[
+  {
+    "word": "casa",
+    "tip": "Onde você mora"
+  },
+  {
+    "word": "sol",
+    "tip": "Astro que ilumina o dia"
+  },
+  {
+    "word": "flor",
+    "tip": "Parte colorida de uma planta"
+  },
+  {
+    "word": "pão",
+    "tip": "Alimento feito de farinha"
+  },
+  {
+    "word": "gato",
+    "tip": "Animal doméstico que mia"
+  },
+  {
+    "word": "cão",
+    "tip": "Melhor amigo do homem"
+  },
+  {
+    "word": "rua",
+    "tip": "Caminho para carros e pessoas"
+  },
+  {
+    "word": "livro",
+    "tip": "Tem páginas e histórias"
+  },
+  {
+    "word": "água",
+    "tip": "Líquido essencial para a vida"
+  },
+  {
+    "word": "luz",
+    "tip": "O que nos permite ver"
+  },
+  {
+    "word": "mesa",
+    "tip": "Móvel com tampo e pernas"
+  },
+  {
+    "word": "bola",
+    "tip": "Objeto redondo para brincar"
+  },
+  {
+    "word": "pé",
+    "tip": "Parte do corpo para andar"
+  },
+  {
+    "word": "mão",
+    "tip": "Parte do corpo para pegar"
+  },
+  {
+    "word": "olho",
+    "tip": "Parte do corpo para ver"
+  },
+  {
+    "word": "boca",
+    "tip": "Parte do corpo para falar e comer"
+  },
+  {
+    "word": "nariz",
+    "tip": "Parte do corpo para cheirar"
+  },
+  {
+    "word": "orelha",
+    "tip": "Parte do corpo para ouvir"
+  },
+  {
+    "word": "dedo",
+    "tip": "Extremidade da mão ou do pé"
+  },
+  {
+    "word": "cabelo",
+    "tip": "Fios que cobrem a cabeça"
+  },
+  {
+    "word": "tempo",
+    "tip": "Medida de duração"
+  },
+  {
+    "word": "ar",
+    "tip": "O que respiramos"
+  },
+  {
+    "word": "fogo",
+    "tip": "Gera calor e luz"
+  },
+  {
+    "word": "terra",
+    "tip": "Planeta onde vivemos"
+  },
+  {
+    "word": "céu",
+    "tip": "Acima de nós, onde estão as nuvens"
+  },
+  {
+    "word": "nuvem",
+    "tip": "Massa de vapor no céu"
+  },
+  {
+    "word": "vento",
+    "tip": "Ar em movimento"
+  },
+  {
+    "word": "chuva",
+    "tip": "Água que cai do céu"
+  },
+  {
+    "word": "neve",
+    "tip": "Flocos brancos de gelo"
+  },
+  {
+    "word": "rio",
+    "tip": "Curso de água natural"
+  },
+  {
+    "word": "mar",
+    "tip": "Grande extensão de água salgada"
+  },
+  {
+    "word": "peixe",
+    "tip": "Animal que vive na água"
+  },
+  {
+    "word": "árvore",
+    "tip": "Planta grande com tronco e galhos"
+  },
+  {
+    "word": "folha",
+    "tip": "Parte verde da planta"
+  },
+  {
+    "word": "fruta",
+    "tip": "Parte comestível de algumas plantas"
+  },
+  {
+    "word": "suco",
+    "tip": "Bebida feita de fruta"
+  },
+  {
+    "word": "leite",
+    "tip": "Bebida branca de origem animal"
+  },
+  {
+    "word": "queijo",
+    "tip": "Alimento feito de leite"
+  },
+  {
+    "word": "ovo",
+    "tip": "Alimento de origem animal"
+  },
+  {
+    "word": "carne",
+    "tip": "Alimento de origem animal"
+  },
+  {
+    "word": "arroz",
+    "tip": "Grão muito consumido"
+  },
+  {
+    "word": "feijão",
+    "tip": "Leguminosa comum no Brasil"
+  },
+  {
+    "word": "batata",
+    "tip": "Vegetal que cresce na terra"
+  },
+  {
+    "word": "cenoura",
+    "tip": "Vegetal laranja e crocante"
+  },
+  {
+    "word": "alho",
+    "tip": "Tempero forte"
+  },
+  {
+    "word": "cebola",
+    "tip": "Vegetal de camadas"
+  },
+  {
+    "word": "sal",
+    "tip": "Tempero para comida"
+  },
+  {
+    "word": "açúcar",
+    "tip": "Adoçante"
+  },
+  {
+    "word": "mel",
+    "tip": "Doce feito por abelhas"
+  },
+  {
+    "word": "bolo",
+    "tip": "Doce assado"
+  },
+  {
+    "word": "torta",
+    "tip": "Doce ou salgado com massa"
+  },
+  {
+    "word": "café",
+    "tip": "Bebida quente popular"
+  },
+  {
+    "word": "chá",
+    "tip": "Bebida feita por infusão"
+  },
+  {
+    "word": "copo",
+    "tip": "Recipiente para beber"
+  },
+  {
+    "word": "prato",
+    "tip": "Objeto para servir comida"
+  },
+  {
+    "word": "faca",
+    "tip": "Utensílio para cortar"
+  },
+  {
+    "word": "garfo",
+    "tip": "Utensílio para espetar"
+  },
+  {
+    "word": "colher",
+    "tip": "Utensílio para pegar líquidos"
+  },
+  {
+    "word": "cama",
+    "tip": "Onde você dorme"
+  },
+  {
+    "word": "travesseiro",
+    "tip": "Apoio para a cabeça"
+  },
+  {
+    "word": "cobertor",
+    "tip": "Para se aquecer na cama"
+  },
+  {
+    "word": "lençol",
+    "tip": "Tecido que cobre a cama"
+  },
+  {
+    "word": "porta",
+    "tip": "Entrada e saída de um cômodo"
+  },
+  {
+    "word": "janela",
+    "tip": "Abertura para ver o exterior"
+  },
+  {
+    "word": "parede",
+    "tip": "Divisão de um cômodo"
+  },
+  {
+    "word": "telhado",
+    "tip": "Cobertura da casa"
+  },
+  {
+    "word": "chão",
+    "tip": "Superfície onde pisamos"
+  },
+  {
+    "word": "espelho",
+    "tip": "Reflete sua imagem"
+  },
+  {
+    "word": "quadro",
+    "tip": "Obra de arte na parede"
+  },
+  {
+    "word": "relógio",
+    "tip": "Marca o tempo"
+  },
+  {
+    "word": "telefone",
+    "tip": "Para falar com pessoas distantes"
+  },
+  {
+    "word": "chave",
+    "tip": "Abre fechaduras"
+  },
+  {
+    "word": "moeda",
+    "tip": "Dinheiro em metal"
+  },
+  {
+    "word": "nota",
+    "tip": "Dinheiro em papel"
+  },
+  {
+    "word": "banco",
+    "tip": "Onde você guarda dinheiro"
+  },
+  {
+    "word": "loja",
+    "tip": "Onde você compra coisas"
+  },
+  {
+    "word": "escola",
+    "tip": "Onde você estuda"
+  },
+  {
+    "word": "aluno",
+    "tip": "Quem estuda"
+  },
+  {
+    "word": "professor",
+    "tip": "Quem ensina"
+  },
+  {
+    "word": "caneta",
+    "tip": "Para escrever"
+  },
+  {
+    "word": "lápis",
+    "tip": "Para escrever e desenhar"
+  },
+  {
+    "word": "borracha",
+    "tip": "Para apagar o que escreveu"
+  },
+  {
+    "word": "papel",
+    "tip": "Para escrever ou desenhar"
+  },
+  {
+    "word": "tesoura",
+    "tip": "Para cortar papel"
+  },
+  {
+    "word": "cola",
+    "tip": "Para colar coisas"
+  },
+  {
+    "word": "tinta",
+    "tip": "Para colorir ou pintar"
+  },
+  {
+    "word": "pincel",
+    "tip": "Para aplicar tinta"
+  },
+  {
+    "word": "cor",
+    "tip": "Característica visual"
+  },
+  {
+    "word": "azul",
+    "tip": "Cor do céu"
+  },
+  {
+    "word": "verde",
+    "tip": "Cor da grama"
+  },
+  {
+    "word": "vermelho",
+    "tip": "Cor do sangue"
+  },
+  {
+    "word": "amarelo",
+    "tip": "Cor do sol"
+  },
+  {
+    "word": "branco",
+    "tip": "Cor da neve"
+  },
+  {
+    "word": "preto",
+    "tip": "Cor da noite"
+  },
+  {
+    "word": "cinza",
+    "tip": "Mistura de branco e preto"
+  },
+  {
+    "word": "rosa",
+    "tip": "Cor de uma flor"
+  },
+  {
+    "word": "roxo",
+    "tip": "Cor de uma uva"
+  },
+  {
+    "word": "doce",
+    "tip": "Oposto de salgado"
+  },
+  {
+    "word": "quente",
+    "tip": "Oposto de frio"
+  },
+  {
+    "word": "frio",
+    "tip": "Oposto de quente"
+  },
+  {
+    "word": "grande",
+    "tip": "Oposto de pequeno"
+  },
+  {
+    "word": "pequeno",
+    "tip": "Oposto de grande"
+  },
+  {
+    "word": "rápido",
+    "tip": "Oposto de lento"
+  },
+  {
+    "word": "cidade",
+    "tip": "Aglomerado urbano com muitas pessoas"
+  },
+  {
+    "word": "trabalho",
+    "tip": "Atividade para ganhar dinheiro"
+  },
+  {
+    "word": "escola",
+    "tip": "Local de aprendizado"
+  },
+  {
+    "word": "hospital",
+    "tip": "Onde se cuidam os doentes"
+  },
+  {
+    "word": "mercado",
+    "tip": "Local para comprar alimentos e produtos"
+  },
+  {
+    "word": "igreja",
+    "tip": "Local de culto religioso"
+  },
+  {
+    "word": "museu",
+    "tip": "Onde se guardam obras de arte e história"
+  },
+  {
+    "word": "teatro",
+    "tip": "Onde se assistem peças e espetáculos"
+  },
+  {
+    "word": "cinema",
+    "tip": "Onde se assistem filmes"
+  },
+  {
+    "word": "restaurante",
+    "tip": "Onde se come fora de casa"
+  },
+  {
+    "word": "hotel",
+    "tip": "Onde se hospeda em viagens"
+  },
+  {
+    "word": "aeroporto",
+    "tip": "Local de partida e chegada de aviões"
+  },
+  {
+    "word": "estação",
+    "tip": "Ponto de embarque e desembarque de trens ou ônibus"
+  },
+  {
+    "word": "ponte",
+    "tip": "Construção para atravessar rios ou vales"
+  },
+  {
+    "word": "estrada",
+    "tip": "Via para carros entre cidades"
+  },
+  {
+    "word": "veículo",
+    "tip": "Meio de transporte, como carro ou moto"
+  },
+  {
+    "word": "bicicleta",
+    "tip": "Veículo com duas rodas movido a pedal"
+  },
+  {
+    "word": "avião",
+    "tip": "Meio de transporte aéreo"
+  },
+  {
+    "word": "trem",
+    "tip": "Meio de transporte terrestre em trilhos"
+  },
+  {
+    "word": "barco",
+    "tip": "Meio de transporte aquático"
+  },
+  {
+    "word": "motor",
+    "tip": "Peça que gera movimento"
+  },
+  {
+    "word": "roda",
+    "tip": "Parte circular que faz veículos se moverem"
+  },
+  {
+    "word": "freio",
+    "tip": "Mecanismo para parar um veículo"
+  },
+  {
+    "word": "gasolina",
+    "tip": "Combustível para carros"
+  },
+  {
+    "word": "eletricidade",
+    "tip": "Forma de energia"
+  },
+  {
+    "word": "bateria",
+    "tip": "Armazena energia"
+  },
+  {
+    "word": "lâmpada",
+    "tip": "Objeto que produz luz"
+  },
+  {
+    "word": "espelho",
+    "tip": "Superfície que reflete imagens"
+  },
+  {
+    "word": "televisão",
+    "tip": "Aparelho para assistir programas"
+  },
+  {
+    "word": "rádio",
+    "tip": "Aparelho para ouvir música e notícias"
+  },
+  {
+    "word": "computador",
+    "tip": "Máquina para processar informações"
+  },
+  {
+    "word": "internet",
+    "tip": "Rede mundial de computadores"
+  },
+  {
+    "word": "telefone",
+    "tip": "Aparelho para se comunicar à distância"
+  },
+  {
+    "word": "câmera",
+    "tip": "Para tirar fotos ou gravar vídeos"
+  },
+  {
+    "word": "fotografia",
+    "tip": "Imagem capturada por câmera"
+  },
+  {
+    "word": "música",
+    "tip": "Arte dos sons"
+  },
+  {
+    "word": "instrumento",
+    "tip": "Objeto para fazer música"
+  },
+  {
+    "word": "cantor",
+    "tip": "Quem canta"
+  },
+  {
+    "word": "dança",
+    "tip": "Movimento do corpo ao ritmo da música"
+  },
+  {
+    "word": "pintura",
+    "tip": "Arte de usar tintas"
+  },
+  {
+    "word": "escultura",
+    "tip": "Arte de moldar formas"
+  },
+  {
+    "word": "poesia",
+    "tip": "Arte da palavra em versos"
+  },
+  {
+    "word": "romance",
+    "tip": "Longa narrativa de ficção"
+  },
+  {
+    "word": "jornal",
+    "tip": "Publicação diária de notícias"
+  },
+  {
+    "word": "revista",
+    "tip": "Publicação periódica com artigos variados"
+  },
+  {
+    "word": "notícia",
+    "tip": "Informação sobre um acontecimento"
+  },
+  {
+    "word": "repórter",
+    "tip": "Quem coleta e informa notícias"
+  },
+  {
+    "word": "médico",
+    "tip": "Profissional da saúde"
+  },
+  {
+    "word": "enfermeiro",
+    "tip": "Profissional que cuida de doentes"
+  },
+  {
+    "word": "professor",
+    "tip": "Quem ensina"
+  },
+  {
+    "word": "estudante",
+    "tip": "Quem estuda"
+  },
+  {
+    "word": "advogado",
+    "tip": "Profissional da lei"
+  },
+  {
+    "word": "juiz",
+    "tip": "Quem julga em tribunal"
+  },
+  {
+    "word": "policial",
+    "tip": "Profissional da segurança"
+  },
+  {
+    "word": "bombeiro",
+    "tip": "Combate incêndios e faz resgates"
+  },
+  {
+    "word": "engenheiro",
+    "tip": "Quem projeta e constrói"
+  },
+  {
+    "word": "arquiteto",
+    "tip": "Quem projeta edifícios"
+  },
+  {
+    "word": "fazendeiro",
+    "tip": "Quem trabalha na fazenda"
+  },
+  {
+    "word": "cozinheiro",
+    "tip": "Quem prepara alimentos"
+  },
+  {
+    "word": "garçom",
+    "tip": "Quem serve em restaurantes"
+  },
+  {
+    "word": "balconista",
+    "tip": "Quem atende em lojas"
+  },
+  {
+    "word": "carteiro",
+    "tip": "Quem entrega correspondências"
+  },
+  {
+    "word": "lixo",
+    "tip": "Resíduos descartados"
+  },
+  {
+    "word": "reciclagem",
+    "tip": "Processo de transformar lixo em algo novo"
+  },
+  {
+    "word": "ambiente",
+    "tip": "Entorno natural"
+  },
+  {
+    "word": "natureza",
+    "tip": "Conjunto de tudo que não é feito pelo homem"
+  },
+  {
+    "word": "floresta",
+    "tip": "Grande área com muitas árvores"
+  },
+  {
+    "word": "montanha",
+    "tip": "Grande elevação de terra"
+  },
+  {
+    "word": "vale",
+    "tip": "Região entre montanhas"
+  },
+  {
+    "word": "deserto",
+    "tip": "Região muito seca"
+  },
+  {
+    "word": "ilha",
+    "tip": "Porção de terra cercada por água"
+  },
+  {
+    "word": "vulcão",
+    "tip": "Montanha que expele lava"
+  },
+  {
+    "word": "terremoto",
+    "tip": "Tremor da terra"
+  },
+  {
+    "word": "tsunami",
+    "tip": "Onda gigante no mar"
+  },
+  {
+    "word": "furacão",
+    "tip": "Tempestade com ventos fortes"
+  },
+  {
+    "word": "raio",
+    "tip": "Descarga elétrica na atmosfera"
+  },
+  {
+    "word": "trovão",
+    "tip": "Barulho do raio"
+  },
+  {
+    "word": "gelo",
+    "tip": "Água congelada"
+  },
+  {
+    "word": "vapor",
+    "tip": "Água em estado gasoso"
+  },
+  {
+    "word": "fumaça",
+    "tip": "Gás produzido pela queima"
+  },
+  {
+    "word": "cinzas",
+    "tip": "Restos de algo queimado"
+  },
+  {
+    "word": "carvão",
+    "tip": "Combustível fóssil"
+  },
+  {
+    "word": "petróleo",
+    "tip": "Líquido inflamável, fonte de energia"
+  },
+  {
+    "word": "ouro",
+    "tip": "Metal precioso"
+  },
+  {
+    "word": "prata",
+    "tip": "Metal precioso, menos que ouro"
+  },
+  {
+    "word": "ferro",
+    "tip": "Metal comum"
+  },
+  {
+    "word": "vidro",
+    "tip": "Material transparente e frágil"
+  },
+  {
+    "word": "madeira",
+    "tip": "Material de árvores"
+  },
+  {
+    "word": "plástico",
+    "tip": "Material sintético leve"
+  },
+  {
+    "word": "borracha",
+    "tip": "Material elástico"
+  },
+  {
+    "word": "tecido",
+    "tip": "Material para roupas"
+  },
+  {
+    "word": "algodão",
+    "tip": "Fibra natural para tecidos"
+  },
+  {
+    "word": "lã",
+    "tip": "Fibra de ovelha para roupas"
+  },
+  {
+    "word": "seda",
+    "tip": "Fibra natural de bicho-da-seda"
+  },
+  {
+    "word": "sapato",
+    "tip": "Calçado para os pés"
+  },
+  {
+    "word": "camisa",
+    "tip": "Peça de roupa para a parte superior"
+  },
+  {
+    "word": "calça",
+    "tip": "Peça de roupa para as pernas"
+  },
+  {
+    "word": "vestido",
+    "tip": "Peça única de roupa feminina"
+  },
+  {
+    "word": "saia",
+    "tip": "Peça de roupa feminina para a parte inferior"
+  },
+  {
+    "word": "casaco",
+    "tip": "Roupa para o frio"
+  },
+  {
+    "word": "chapéu",
+    "tip": "Para cobrir a cabeça"
+  },
+  {
+    "word": "óculos",
+    "tip": "Para corrigir a visão ou proteger os olhos"
+  },
+  {
+    "word": "casa",
+    "tip": "Onde moramos"
+  },
+  {
+    "word": "sol",
+    "tip": "Aparece de dia"
+  },
+  {
+    "word": "pão",
+    "tip": "Vai na mesa"
+  },
+  {
+    "word": "gato",
+    "tip": "Mia bastante"
+  },
+  {
+    "word": "copo",
+    "tip": "Segura líquidos"
+  },
+  {
+    "word": "bola",
+    "tip": "Usada em jogos"
+  },
+  {
+    "word": "mesa",
+    "tip": "Tem quatro pés"
+  },
+  {
+    "word": "rua",
+    "tip": "Passamos por ela"
+  },
+  {
+    "word": "lua",
+    "tip": "Aparece à noite"
+  },
+  {
+    "word": "flor",
+    "tip": "Nasce na terra"
+  },
+  {
+    "word": "nuvem",
+    "tip": "Fica no céu"
+  },
+  {
+    "word": "pé",
+    "tip": "Fica no chão"
+  },
+  {
+    "word": "livro",
+    "tip": "Tem páginas"
+  },
+  {
+    "word": "chave",
+    "tip": "Abre portas"
+  },
+  {
+    "word": "cadeira",
+    "tip": "Serve para sentar"
+  },
+  {
+    "word": "dedo",
+    "tip": "Parte da mão"
+  },
+  {
+    "word": "vento",
+    "tip": "Sopra forte"
+  },
+  {
+    "word": "uva",
+    "tip": "Fruta pequena"
+  },
+  {
+    "word": "carro",
+    "tip": "Anda na rua"
+  },
+  {
+    "word": "rato",
+    "tip": "Animal pequeno"
+  },
+  {
+    "word": "papel",
+    "tip": "Usamos para escrever"
+  },
+  {
+    "word": "sapo",
+    "tip": "Pula bem"
+  },
+  {
+    "word": "nariz",
+    "tip": "Cheira coisas"
+  },
+  {
+    "word": "sino",
+    "tip": "Faz som"
+  },
+  {
+    "word": "toalha",
+    "tip": "Seca o corpo"
+  },
+  {
+    "word": "mão",
+    "tip": "Ajuda a pegar"
+  },
+  {
+    "word": "ovo",
+    "tip": "Sai da galinha"
+  },
+  {
+    "word": "bolo",
+    "tip": "Doce comum"
+  },
+  {
+    "word": "leite",
+    "tip": "Vem da vaca"
+  },
+  {
+    "word": "panela",
+    "tip": "Usada para cozinhar"
+  },
+  {
+    "word": "porta",
+    "tip": "Fecha e abre"
+  },
+  {
+    "word": "olho",
+    "tip": "Serve para ver"
+  },
+  {
+    "word": "céu",
+    "tip": "Está acima"
+  },
+  {
+    "word": "mel",
+    "tip": "Feito por abelhas"
+  },
+  {
+    "word": "pato",
+    "tip": "Gosta de água"
+  },
+  {
+    "word": "faca",
+    "tip": "Corta as coisas"
+  },
+  {
+    "word": "riso",
+    "tip": "Som da alegria"
+  },
+  {
+    "word": "milho",
+    "tip": "Cresce na lavoura"
+  },
+  {
+    "word": "dente",
+    "tip": "Fica na boca"
+  },
+  {
+    "word": "roupa",
+    "tip": "Cobre o corpo"
+  },
+  {
+    "word": "água",
+    "tip": "Mata a sede"
+  },
+  {
+    "word": "tigre",
+    "tip": "Animal com listras"
+  },
+  {
+    "word": "vela",
+    "tip": "Ilumina o escuro"
+  },
+  {
+    "word": "noite",
+    "tip": "Sem luz do sol"
+  },
+  {
+    "word": "ninho",
+    "tip": "Abriga filhotes"
+  },
+  {
+    "word": "barco",
+    "tip": "Anda na água"
+  },
+  {
+    "word": "piano",
+    "tip": "Instrumento musical"
+  },
+  {
+    "word": "pulo",
+    "tip": "Ação de saltar"
+  },
+  {
+    "word": "areia",
+    "tip": "Tem na praia"
+  },
+  {
+    "word": "colar",
+    "tip": "Usado no pescoço"
+  },
+  {
+    "word": "sombra",
+    "tip": "Aparece no sol"
+  }
+]

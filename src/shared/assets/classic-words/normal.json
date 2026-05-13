@@ -1,0 +1,490 @@
+[
+  {
+    "word": "abacaxi",
+    "tip": "Tem textura marcante"
+  },
+  {
+    "word": "astronauta",
+    "tip": "Atua fora do comum"
+  },
+  {
+    "word": "montanha",
+    "tip": "Fica bem no alto"
+  },
+  {
+    "word": "oceano",
+    "tip": "Muito extenso"
+  },
+  {
+    "word": "violino",
+    "tip": "Produz som"
+  },
+  {
+    "word": "pinguim",
+    "tip": "Gosta do frio"
+  },
+  {
+    "word": "esmeralda",
+    "tip": "Brilha bastante"
+  },
+  {
+    "word": "deserto",
+    "tip": "Praticamente vazio"
+  },
+  {
+    "word": "helicóptero",
+    "tip": "Se move pelo ar"
+  },
+  {
+    "word": "microfone",
+    "tip": "Aumenta o som"
+  },
+  {
+    "word": "pirâmide",
+    "tip": "Tem base larga"
+  },
+  {
+    "word": "enigma",
+    "tip": "Gera dúvida"
+  },
+  {
+    "word": "fósforo",
+    "tip": "Inicia algo"
+  },
+  {
+    "word": "travesseiro",
+    "tip": "Fica na cama"
+  },
+  {
+    "word": "estômago",
+    "tip": "Atua após comer"
+  },
+  {
+    "word": "bússola",
+    "tip": "Indica direção"
+  },
+  {
+    "word": "galáxia",
+    "tip": "Reúne muitos"
+  },
+  {
+    "word": "tartaruga",
+    "tip": "Movimento lento"
+  },
+  {
+    "word": "bicicleta",
+    "tip": "Tem duas rodas"
+  },
+  {
+    "word": "planeta",
+    "tip": "Orbita algo"
+  },
+  {
+    "word": "janela",
+    "tip": "Pode ser aberta"
+  },
+  {
+    "word": "telefone",
+    "tip": "Transmite som"
+  },
+  {
+    "word": "relógio",
+    "tip": "Marca o tempo"
+  },
+  {
+    "word": "livro",
+    "tip": "Contém páginas"
+  },
+  {
+    "word": "chave",
+    "tip": "Abre algo"
+  },
+  {
+    "word": "sombra",
+    "tip": "Evita luz"
+  },
+  {
+    "word": "avião",
+    "tip": "Cruza o céu"
+  },
+  {
+    "word": "espelho",
+    "tip": "Reflete imagem"
+  },
+  {
+    "word": "cadeira",
+    "tip": "Serve para sentar"
+  },
+  {
+    "word": "guarda-chuva",
+    "tip": "Protege da chuva"
+  },
+  {
+    "word": "sapato",
+    "tip": "Vai nos pés"
+  },
+  {
+    "word": "mochila",
+    "tip": "Carrega itens"
+  },
+  {
+    "word": "escada",
+    "tip": "Liga alturas"
+  },
+  {
+    "word": "tigre",
+    "tip": "Possui listras"
+  },
+  {
+    "word": "banco",
+    "tip": "Guarda valores"
+  },
+  {
+    "word": "copo",
+    "tip": "Contém líquido"
+  },
+  {
+    "word": "toalha",
+    "tip": "Seca algo"
+  },
+  {
+    "word": "trânsito",
+    "tip": "Envolve veículos"
+  },
+  {
+    "word": "cinema",
+    "tip": "Exibe histórias"
+  },
+  {
+    "word": "praia",
+    "tip": "Tem areia"
+  },
+  {
+    "word": "farol",
+    "tip": "Guia à distância"
+  },
+  {
+    "word": "cimento",
+    "tip": "Forma estruturas"
+  },
+  {
+    "word": "cortina",
+    "tip": "Bloqueia visão"
+  },
+  {
+    "word": "quadro",
+    "tip": "Vai na parede"
+  },
+  {
+    "word": "computador",
+    "tip": "Processa dados"
+  },
+  {
+    "word": "lençol",
+    "tip": "Cobre a cama"
+  },
+  {
+    "word": "alicate",
+    "tip": "Corta ou prende"
+  },
+  {
+    "word": "vela",
+    "tip": "Pode iluminar"
+  },
+  {
+    "word": "teclado",
+    "tip": "Possui teclas"
+  },
+  {
+    "word": "janela",
+    "tip": "Divide ambientes"
+  },
+  {
+    "word": "blusa",
+    "tip": "Veste o tronco"
+  },
+  {
+    "word": "anel",
+    "tip": "Vai no dedo"
+  },
+  {
+    "word": "bola",
+    "tip": "Rola fácil"
+  },
+  {
+    "word": "bule",
+    "tip": "Serve bebida"
+  },
+  {
+    "word": "tomada",
+    "tip": "Conecta energia"
+  },
+  {
+    "word": "bandeira",
+    "tip": "Tem significado"
+  },
+  {
+    "word": "grama",
+    "tip": "Reveste o solo"
+  },
+  {
+    "word": "cinto",
+    "tip": "Ajusta a roupa"
+  },
+  {
+    "word": "pente",
+    "tip": "Organiza fios"
+  },
+  {
+    "word": "piano",
+    "tip": "Tem teclas"
+  },
+  {
+    "word": "caixa",
+    "tip": "Guarda coisas"
+  },
+  {
+    "word": "fivela",
+    "tip": "Prende tiras"
+  },
+  {
+    "word": "espátula",
+    "tip": "Espalha algo"
+  },
+  {
+    "word": "carimbo",
+    "tip": "Marca papel"
+  },
+  {
+    "word": "controle",
+    "tip": "Altera funções"
+  },
+  {
+    "word": "escova",
+    "tip": "Desembaraça algo"
+  },
+  {
+    "word": "sino",
+    "tip": "Faz som"
+  },
+  {
+    "word": "câmera",
+    "tip": "Registra imagem"
+  },
+  {
+    "word": "botão",
+    "tip": "Pode apertar"
+  },
+  {
+    "word": "corda",
+    "tip": "Serve para prender"
+  },
+  {
+    "word": "tapete",
+    "tip": "Vai no chão"
+  },
+  {
+    "word": "janela",
+    "tip": "Pode ser aberta"
+  },
+  {
+    "word": "telefone",
+    "tip": "Transmite som"
+  },
+  {
+    "word": "relógio",
+    "tip": "Marca o tempo"
+  },
+  {
+    "word": "livro",
+    "tip": "Contém páginas"
+  },
+  {
+    "word": "chave",
+    "tip": "Abre algo"
+  },
+  {
+    "word": "espelho",
+    "tip": "Reflete imagem"
+  },
+  {
+    "word": "avião",
+    "tip": "Cruza o céu"
+  },
+  {
+    "word": "cadeira",
+    "tip": "Serve para sentar"
+  },
+  {
+    "word": "guarda-chuva",
+    "tip": "Protege da chuva"
+  },
+  {
+    "word": "sapato",
+    "tip": "Vai nos pés"
+  },
+  {
+    "word": "mochila",
+    "tip": "Carrega itens"
+  },
+  {
+    "word": "escada",
+    "tip": "Liga alturas"
+  },
+  {
+    "word": "banco",
+    "tip": "Guarda valores"
+  },
+  {
+    "word": "copo",
+    "tip": "Contém líquido"
+  },
+  {
+    "word": "trânsito",
+    "tip": "Envolve veículos"
+  },
+  {
+    "word": "cinema",
+    "tip": "Exibe histórias"
+  },
+  {
+    "word": "praia",
+    "tip": "Tem areia"
+  },
+  {
+    "word": "cimento",
+    "tip": "Forma estruturas"
+  },
+  {
+    "word": "cortina",
+    "tip": "Bloqueia visão"
+  },
+  {
+    "word": "computador",
+    "tip": "Processa dados"
+  },
+  {
+    "word": "lençol",
+    "tip": "Cobre a cama"
+  },
+  {
+    "word": "alicate",
+    "tip": "Corta ou prende"
+  },
+  {
+    "word": "vela",
+    "tip": "Pode iluminar"
+  },
+  {
+    "word": "teclado",
+    "tip": "Possui teclas"
+  },
+  {
+    "word": "blusa",
+    "tip": "Veste o tronco"
+  },
+  {
+    "word": "anel",
+    "tip": "Vai no dedo"
+  },
+  {
+    "word": "bola",
+    "tip": "Rola fácil"
+  },
+  {
+    "word": "bule",
+    "tip": "Serve bebida"
+  },
+  {
+    "word": "tomada",
+    "tip": "Conecta energia"
+  },
+  {
+    "word": "bandeira",
+    "tip": "Tem significado"
+  },
+  {
+    "word": "grama",
+    "tip": "Reveste o solo"
+  },
+  {
+    "word": "cinto",
+    "tip": "Ajusta a roupa"
+  },
+  {
+    "word": "pente",
+    "tip": "Organiza fios"
+  },
+  {
+    "word": "piano",
+    "tip": "Tem teclas"
+  },
+  {
+    "word": "caixa",
+    "tip": "Guarda coisas"
+  },
+  {
+    "word": "espátula",
+    "tip": "Espalha algo"
+  },
+  {
+    "word": "carimbo",
+    "tip": "Marca papel"
+  },
+  {
+    "word": "controle",
+    "tip": "Altera funções"
+  },
+  {
+    "word": "escova",
+    "tip": "Desembaraça algo"
+  },
+  {
+    "word": "câmera",
+    "tip": "Registra imagem"
+  },
+  {
+    "word": "botão",
+    "tip": "Pode apertar"
+  },
+  {
+    "word": "corda",
+    "tip": "Serve para prender"
+  },
+  {
+    "word": "tapete",
+    "tip": "Vai no chão"
+  },
+  {
+    "word": "calendário",
+    "tip": "Divide o tempo"
+  },
+  {
+    "word": "travesseiro",
+    "tip": "Fica na cama"
+  },
+  {
+    "word": "bússola",
+    "tip": "Indica direção"
+  },
+  {
+    "word": "planeta",
+    "tip": "Orbita algo"
+  },
+  {
+    "word": "bicicleta",
+    "tip": "Tem duas rodas"
+  },
+  {
+    "word": "estômago",
+    "tip": "Atua após comer"
+  },
+  {
+    "word": "sino",
+    "tip": "Faz som"
+  },
+  {
+    "word": "enigma",
+    "tip": "Gera dúvida"
+  }
+]
