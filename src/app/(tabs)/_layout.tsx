@@ -29,16 +29,16 @@ const Layout = () => {
             backgroundColor: theme.colors.paper,
             marginHorizontal: "auto",
             gap: 16,
-            paddingHorizontal: 16,
+            paddingHorizontal: 8,
             borderRadius: theme.corner.large,
             marginBottom: 24
           }}
         >
-          <TabTrigger className="p-2 px-8" name="home" href={"/"} asChild>
+          <TabTrigger className="p-2 px-6" name="home" href={"/"} asChild>
             <CustomTabsButton text="Início" />
           </TabTrigger>
 
-          <TabTrigger className="p-2 px-8" name="about" href={"/about"} asChild>
+          <TabTrigger className="p-2 px-6" name="about" href={"/about"} asChild>
             <CustomTabsButton text="Sobre" />
           </TabTrigger>
         </TabList>
