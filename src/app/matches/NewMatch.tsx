@@ -47,10 +47,8 @@ const NewMatch = () => {
     setIsLoading(false)
 
     // console.log(matchId);
-    router.back()    
-
-    // router.replace(`/matches/${matchId}/MatchEnded`)
-    // router.replace(`/matches/${matchId}/MatchOngoing`)
+    router.replace(`/matches/${matchId}/MatchOnGoing`)
+    // router.back()    
   }
 
   const handleBack = () => {

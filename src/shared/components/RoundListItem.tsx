@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View } from 'react-native'
 
 interface IRoundListItem {
-    status: 'win' | 'lose'
+    status: 'win' | 'lose' | 'playing' | 'setup'
     word: string
     tip?: string
     correctsLetters: string[]
@@ -17,7 +17,7 @@ const RoundListItem = ({status, word, tip, correctsLetters, wrongLetters, divide
     }} className='px-1 py-1 border-background gap-1'>
 
         <View className='flex-row justify-between items-center mb-4'>
-            <Text className='text-text font-bold text-lg'>{word}</Text>
+            <Text className='text-text font-bold text-lg uppercase'>{word}</Text>
             {status === 'win' && (
                 <Text className='text-correct'>Vitória</Text>
             )}

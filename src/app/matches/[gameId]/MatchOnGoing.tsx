@@ -77,7 +77,6 @@ const MatchOnGoing = () => {
     if (!match?.id) return
 
     const result = await StorageMatchService.guessALetterByMatchId(match.id, letter)
-    console.log(result);
 
     switch (result) {
       case 'match-not-found':
@@ -91,6 +90,8 @@ const MatchOnGoing = () => {
       case 'round-time-expired':
         router.replace(`/matches/${match.id}/NewRound`)
         break;
+      case 'letter-already-used':
+        break
 
       default:
         setMatch(oldMatch => {
@@ -99,7 +100,7 @@ const MatchOnGoing = () => {
           return {
             ...oldMatch,
             rounds: [
-              ...oldMatch.rounds,
+              ...oldMatch.rounds.filter(oldRound => oldRound.round !== result.round),
               result
             ]
           }
