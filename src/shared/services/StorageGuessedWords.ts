@@ -19,6 +19,7 @@ export const StorageGuessedWords = {
     let words = await StorageGuessedWords.getWords();
     if (!words.includes(word)) {
       words += `${word},`
+      await StorageGuessedWords.update(words)
     }
   }
 };

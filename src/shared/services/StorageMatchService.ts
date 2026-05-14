@@ -74,14 +74,69 @@ export const StorageMatchService = {
       tip: wordToGuess.tip,
       secretWord: wordToGuess.word,
       round: match.rounds.length || 1,
-      maskedWord: wordToGuess.word.split('').map(() => "_")
+      maskedWord: wordToGuess.word.split('').map((letter) => letter === '-' ? '-' : '_')
     }
 
     match.rounds.push(newRound)
     match.currentRound = match.rounds.length
 
     await StorageMatchService.update(match)
+    await StorageGuessedWords.addWord(wordToGuess.word)
 
     return newRound
+  },
+  async guessALetterByMatchId(matchId: string, letter: string) {
+    const match = await StorageMatchService.getById(matchId)
+
+    if (!match) return 'match-not-found' as const
+    if (match.status !== 'ongoing') return 'match-ended' as const
+
+    const currentRound = match.rounds.find(round => round.round === match.currentRound)
+      
+    if (!currentRound) return 'round-not-found' as const
+
+    if (currentRound.status !== 'playing') return 'round-ended' as const
+
+    if (currentRound.endTime < Date.now()) {
+      currentRound.status = 'lose'
+      await StorageMatchService.update(match)
+      return 'round-time-expired' as const
+    }
+
+    const nomralizedSecretWord = currentRound.secretWord
+      .split('')
+      .map(letter => letter
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+      )
+
+    const isCorrectGuess = nomralizedSecretWord.includes(letter)
+
+    if (!isCorrectGuess) {
+      currentRound.wrongGuesses.push(letter)
+    } else {
+      currentRound.correctGuesses.push(letter)
+
+      const originalWordAsArray = currentRound.secretWord.split('')
+
+      currentRound.maskedWord = nomralizedSecretWord.map((letter, index) => {
+        if (currentRound.correctGuesses.includes(letter)) return originalWordAsArray[index];
+        return letter === '-' ? '-' : '_'
+      })
+    }
+
+    if (currentRound.wrongGuesses.length >= 7) {
+      currentRound.status = 'lose'
+      await StorageMatchService.update(match)
+      return 'round-ended' as const
+    } else if (!currentRound.maskedWord.includes('_')) {
+      currentRound.status = 'win'
+      await StorageMatchService.update(match)
+      return 'round-ended' as const
+    } else {
+      await StorageMatchService.update(match)
+      return currentRound
+    }
+
   }
 };
