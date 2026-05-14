@@ -6,10 +6,14 @@ import * as SplashScreen from "expo-splash-screen";
 import "../global.css";
 import { theme } from "@/shared/themes/theme";
 import CustomHeader from "@/shared/components/CustomHeader";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
+
+  const insets = useSafeAreaInsets();
+
   const [loaded, error] = useFonts({
     PoppinsRegular: require("./../../assets/fonts/Poppins/Poppins-Regular.ttf"),
     PoppinsBold: require("./../../assets/fonts/Poppins/Poppins-Bold.ttf"),
@@ -27,6 +31,14 @@ const RootLayout = () => {
   // navigation pode ser Slot, Stack ou Tabs
 
   return (
+    <View
+          style={{
+            flex: 1,
+            marginBottom: insets.bottom,
+            marginLeft: insets.left,
+            marginRight: insets.right,
+          }}
+        >
     <Stack
       screenOptions={{
         header: CustomHeader,
@@ -69,6 +81,7 @@ const RootLayout = () => {
         options={{ title: "Partida Encerrada" }}
       />
     </Stack>
+    </View>
   );
 };
 

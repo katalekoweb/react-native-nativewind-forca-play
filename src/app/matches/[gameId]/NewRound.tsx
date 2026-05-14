@@ -24,13 +24,15 @@ const NewRound = () => {
   useEffect(() => {
     if (!gameId || Array.isArray(gameId)) return;
 
-    StorageMatchService.getById(gameId).then((match) => {
+    StorageMatchService.getById(gameId).then(async (match) => {
       if (!match) return;
 
       if (match.status !== "ongoing") {
         router.replace(`/matches/${match.id}/MatchEnded`);
         return;
       } else if (match.numberOfRounds === match.rounds.length) {
+        
+        await StorageMatchService.update(match)
         router.replace(`/matches/${match.id}/MatchEnded`);
         return;
       }
@@ -89,14 +91,14 @@ const NewRound = () => {
   return (
     <ScrollView className="flex-1 p-3 gap-4 pt-6">
       <View className="gap-5">
-        <Text className="text-text text-center font-bold text-lg">
+        <Text className="text-text text-center font-bold text-xl px-8">
           Vamos para a próxima rodada?{" "}
         </Text>
 
         <Image
           source={ForcaImages[1]}
           className=" self-center"
-          style={{ width: 250, height: 250 }}
+          style={{ width: 120, height: 120 }}
         />
 
         <Section title="Última rodada">
@@ -104,7 +106,7 @@ const NewRound = () => {
             <RoundListItem
               key={currentRoundData.round}
               status={currentRoundData.status}
-              word={currentRoundData.maskedWord.join("")}
+              word={currentRoundData.maskedWord.join(" ")}
               tip={currentRoundData.tip}
               wrongLetters={currentRoundData.wrongGuesses}
               correctsLetters={currentRoundData.correctGuesses}
@@ -114,7 +116,7 @@ const NewRound = () => {
 
         <View className=" flex-row items-center justify-center gap-6">
           <Outlined text="Desistir" onPress={handleDesist} color="error" />
-          <Contained onPress={handleNewRound} text="Começar" />
+          <Contained onPress={handleNewRound} text="Próxima Rodada" />
         </View>
       </View>
     </ScrollView>

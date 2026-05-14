@@ -119,14 +119,14 @@ const MatchOnGoing = () => {
 
   return (
     <ScrollView className="flex-1 p-2 pt-6">
-      <View className="gap-6 items-center">
-        <Text className="text-text font-regular text-lg text-center underline">
+      <View className="gap-8 items-center">
+        <Text className="text-text font-regular text-xl px-8 text-center underline">
           {currenctRoundData?.tip}
         </Text>
 
         <Image
           source={ForcaImages[(currenctRoundData.wrongGuesses.length + 1) as 1]}
-          style={{ width: 250, height: 250 }}
+          style={{ width: 150, height: 150 }}
         />
 
         <View className="flex-row flex-wrap gap-2 items-center justify-center">
@@ -139,11 +139,13 @@ const MatchOnGoing = () => {
           ))}
         </View>
 
-        <Keyboard
+        <Card className="mx-3 border-alert border-4 p-2">
+          <Keyboard
           onSelect={handleGuessALetter}
           wrongGuesses={currenctRoundData.wrongGuesses}
           correctGuesses={currenctRoundData.correctGuesses}
         />
+        </Card>
 
         <Outlined
           disabled={desisting}

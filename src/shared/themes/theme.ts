@@ -7,7 +7,7 @@ export const theme = {
     alert: '#ffff00',
     primaryText: '#111111',
     correct: '#32ca88',
-    wrong: '#ff4548'
+    wrong: '#ff3d3d'
   },
   corner: {
     small: 4,

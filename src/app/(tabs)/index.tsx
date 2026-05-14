@@ -20,9 +20,8 @@ const Home = () => {
   const router = useRouter();
 
   const [matchesEndend, setMatchesEnded] = useState<IMatchHistory[]>([]);
-  const [matchesOnGoing, setMatchesOnGoing] = useState<
-    (IMatchHistory & IMatch)[]
-  >([]);
+  const [matchesOnGoing, setMatchesOnGoing] = useState<(IMatchHistory & IMatch)[]>([]);
+  const [matches, setMatches]  = useState<IMatchHistory[]>([]); 
 
   // useEffect(() => {
 
@@ -31,6 +30,9 @@ const Home = () => {
   useFocusEffect(
     useCallback(() => {
       StorageMatchHistoryService.getAll().then(async (matches) => {
+
+        setMatches(matches)
+
         const matchesEnded = matches?.filter(
           (match) => match.status !== "ongoing",
         );
@@ -60,6 +62,7 @@ const Home = () => {
     }, []),
   );
 
+
   return (
     <ScrollView>
       <View className="flex-1 px-4 gap-6">
@@ -68,8 +71,17 @@ const Home = () => {
             onPress={() => router.push("/matches/NewMatch")}
             disabled={matchesOnGoing.length > 0}
             color="primary"
-            text="Nova partida"
+            text="Começar nova partida"
           />
+        </View>
+
+        <View className=" items-center gap-4 flex-row grid grid-cols-2">
+          <Card>
+            <Text className="text-center text-text px-2">Partidas Ganhas:  { matches.filter((match) => match.status === 'win').length }</Text>
+          </Card>
+          <Card className="flex-grow">
+            <Text className="text-center text-text px-2">Perdidas:  { matches.filter((match) => match.status === 'lose').length }</Text>
+          </Card>
         </View>
 
         <Section title="Partidas em andamento">

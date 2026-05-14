@@ -19,7 +19,7 @@ const RoundListItem = ({status, word, tip, correctsLetters, wrongLetters, divide
         <View className='flex-row justify-between items-center mb-4'>
             <Text className='text-text font-bold text-lg uppercase'>{word}</Text>
             {status === 'win' && (
-                <Text className='text-correct'>Vitória</Text>
+                <Text className='text-correct text-3xl undeline'>Vitória</Text>
             )}
 
             {status === 'lose' && (

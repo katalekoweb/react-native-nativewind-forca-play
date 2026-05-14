@@ -49,9 +49,9 @@ export const StorageMatchService = {
   async update(match: IMatch) {
 
     const current_match = await StorageMatchService.getById(match.id)
-    if (!current_match) return    
+    if (!current_match) return 
 
-    if (current_match.status === "ongoing") {
+    if (match.status === "ongoing") {
       const finalizedRounds  = match.rounds.filter(round => ['win', 'lose'].includes(round.status))
 
       if (match.numberOfRounds === finalizedRounds.length) {
@@ -62,12 +62,14 @@ export const StorageMatchService = {
           return previous
         }, 0)
 
-        match.status = newStatus === 0
-        ? 'draw'
-        : newStatus > 0
-        ? 'win'
-        : newStatus > 0
-        ? 'lose' : 'ongoing'
+        const newStatusName = newStatus === 0
+          ? 'draw'
+            : newStatus > 0
+            ? 'win'
+              : newStatus < 0
+                ? 'lose' : 'ongoing'
+
+        match.status = newStatusName;
 
         await StorageMatchHistoryService.updateById({
           id: match.id,

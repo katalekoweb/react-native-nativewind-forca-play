@@ -41,8 +41,8 @@ const Home = () => {
                   onPress={handleOpenMail}
                   className=" text-primary underline"
                 >
-                  comercial@techvalon.com
-                </Text>
+                  comercial@techvalon.com 
+                </Text> &nbsp;
                 Este aplicativo exibe a versão offline do jogo ForcaPlay. O
                 clássico jogo da forca
               </Text>
