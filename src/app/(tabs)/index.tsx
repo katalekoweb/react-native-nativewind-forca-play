@@ -77,10 +77,10 @@ const Home = () => {
 
         <View className=" items-center gap-4 flex-row grid grid-cols-2">
           <Card>
-            <Text className="text-center text-text px-2">Partidas Ganhas:  { matches.filter((match) => match.status === 'win').length }</Text>
+            <Text className="text-center text-text px-2">Partidas Ganhas:  { matches?.filter((match) => match.status === 'win').length ?? 0 }</Text>
           </Card>
           <Card className="flex-grow">
-            <Text className="text-center text-text px-2">Perdidas:  { matches.filter((match) => match.status === 'lose').length }</Text>
+            <Text className="text-center text-text px-2">Perdidas:  { matches?.filter((match) => match.status === 'lose').length ?? 0 }</Text>
           </Card>
         </View>
 
@@ -118,7 +118,7 @@ const Home = () => {
                 currentRound={match.numberOfRounds}
               />
             ))}
-            {matchesEndend?.length === 0 && (
+            {(matchesEndend?.length ?? 0) === 0 && (
               <View className="p-2 gap-6">
                 <Text className="text-text font-bold text-lg text-center opacity-50">
                   Nenhum histórico ainda...

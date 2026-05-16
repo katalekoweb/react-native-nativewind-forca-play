@@ -1,31 +1,37 @@
 {
   "expo": {
-    "name": "forca-play",
-    "slug": "forca-play",
+    "name": "letraviva",
+    "slug": "letraviva",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
-    "scheme": "forcaplay",
+    "scheme": "letraviva",
     "experiments": {
       "typedRoutes": true
     },
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#67C090"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "icon": {
+        "dark": "./assets/icon.png",
+        "light": "./assets/icon.png"
+      },
+      "bundleIdentifier": "com.anonymous.letraviva"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#67C090"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.letraviva"
     },
     "web": {
       "favicon": "./assets/favicon.png",
